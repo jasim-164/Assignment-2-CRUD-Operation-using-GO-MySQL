@@ -1,0 +1,17 @@
+1.Create User (POST):
+
+INSERT INTO users (first_name, country, profile_picture) VALUES (?, ?, ?)
+
+2.Update User (PATCH):
+
+UPDATE users SET first_name=?, country=?, profile_picture=? WHERE id=?
+
+3.Delete User (DELETE):
+
+DELETE FROM users WHERE id=?
+
+
+4.Delete Associated Activity Logs (within the delete operation)
+
+DELETE FROM activity_logs WHERE user_id=?
+
